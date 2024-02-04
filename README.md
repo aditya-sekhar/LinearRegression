@@ -23,10 +23,10 @@ Extends the concepts to handle multiple features (like house area, number of roo
 ## Visualizations
 
 1. **Linear Regression Line**:
-   ![Linear Regression Line](linear_regression_plot.png)
-   - *Description*: The plot shows the relationship between house area (in square feet) and house price (in INR). The red line represents the best fit line obtained through the linear regression model.
+   ![Linear Regression Line](linear_regression.png)
+   - *Description*: The plot shows the relationship between house area (in square feet) and house price (in INR). The green line represents the best fit line obtained through the linear regression model.
 
 2. **Cost Function and Gradient Descent Visualization**:
-   ![Cost Function and Gradient Descent](gradient_descent_plot.png)
+   ![Cost Function and Gradient Descent](gradient_descent.png)
    - *Description*: This plot illustrates the 'cost bowl' curve of the cost function and the progression of the gradient descent algorithm towards the minimum cost. It gives an intuitive understanding of how the model learns.
 

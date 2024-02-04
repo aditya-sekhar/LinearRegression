@@ -10,6 +10,7 @@ class SimpleLinearRegression:
     def __init__(self, init_w=0, init_b=0):
         self.w = init_w
         self.b = init_b
+        self.costs = []
     
     def fit(self, x, y, lr, epochs):
         """
@@ -25,6 +26,7 @@ class SimpleLinearRegression:
         for i in range(epochs):
             dldw, dldb = compute_gradient(x, y,self.w, self.b)
             cost = cost_function(x, y, self.w, self.b)
+            self.costs.append(cost)
             if i % 100 == 0:
                 print(f' {i} Cost: {cost:.6f} | dldw: {dldw:.6f} | dldb : {dldb:.6f}  w: {self.w:.6f} | b: {self.b:.6f}')
             self.w = self.w - lr * dldw
